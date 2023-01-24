@@ -159,6 +159,7 @@ h2{
     justify-content: center;
     margin: 20px 0 20px 0;
     font-size: 40px;
+    color: #b26c15b0;
 }
 
 .aboutme{
@@ -174,6 +175,7 @@ h2{
     margin-bottom: 20px;
     font-size: 20px;
     background-color: ghostwhite;
+    color: #48554f;
 }
 
 .experience{
@@ -189,6 +191,7 @@ h2{
     margin-bottom: 20px;
     font-size: 20px;
     background-color: ghostwhite;
+    color: #48554f;
 }
 
 .skills{
@@ -204,6 +207,7 @@ h2{
     margin-bottom: 20px;
     font-size: 20px;
     background-color: ghostwhite;
+    color: #48554f;
 }
 
 
@@ -224,7 +228,7 @@ h2{
 .skills >h3{
     font-size: 30px;
     margin-bottom: 20px;
-    background: -webkit-linear-gradient(rgb(151, 0, 238), #158FA7);
+    background: -webkit-linear-gradient( #0790A9, #88918D);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -232,7 +236,7 @@ h2{
 .experience >h3{
     font-size: 30px;
     margin-bottom: 20px;
-    background: -webkit-linear-gradient(rgb(151, 0, 238), #158FA7);
+    background: -webkit-linear-gradient( #0790A9, #88918D);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -240,7 +244,7 @@ h2{
 .textcontainer >h3{
     font-size: 30px;
     margin-bottom: 20px;
-    background: -webkit-linear-gradient(rgb(151, 0, 238), #158FA7);
+    background: -webkit-linear-gradient( #0790A9, #88918D);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -350,10 +354,12 @@ h1 > p{
     justify-content: space-around;
     padding: 20px;
     background-color: ghostwhite;
+    margin-bottom: 20px;
   }
 
   .projectcontainer > img{
-    width: 300px;
+    width: 100%;
+    max-width: 500px;
   }
 
   .textcontainer{
@@ -368,6 +374,7 @@ h1 > p{
     font-size: 20px;
     text-align: center;
     max-width: 600px;
+    color:#48554f;
   }
   
 .buttoncontainer{
@@ -381,17 +388,19 @@ h1 > p{
 
 
 .projectbutton{
-        width: 100px;
-        font-size: 16px;
-        font-weight: 600;
-        color: #fff;
-        cursor: pointer;
-        margin: 20px;
-        height: 55px;
-        text-align:center;
-        border: none;
-        background: cadetblue;
-        border-radius: 100px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0790A9;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    /* border: none; */
+    background: none;
+    border: 2px solid #d0d0d0;
 }
+
+
 
 
