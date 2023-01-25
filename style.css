@@ -17,7 +17,7 @@ body {
 }
 img {
     width: 100%;
-    width: 50px;
+    width: 40px;
 }
 
 main{
@@ -233,6 +233,14 @@ h2{
     -webkit-text-fill-color: transparent;
 }
 
+.contactcontainer >h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient( #0790A9, #88918D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .experience >h3{
     font-size: 30px;
     margin-bottom: 20px;
@@ -263,6 +271,12 @@ h2{
         flex-direction:column-reverse;
     }
     .projectcontainer > img{
+        margin-bottom: 20px;
+    }
+    .projectcontainer2{
+        flex-direction:column;
+    }
+    .projectcontainer2 > img{
         margin-bottom: 20px;
     }
 }
@@ -357,7 +371,24 @@ h1 > p{
     margin-bottom: 20px;
   }
 
+  .projectcontainer2{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: ghostwhite;
+    margin-bottom: 20px;
+  }
+
+
+
   .projectcontainer > img{
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .projectcontainer2 > img{
     width: 100%;
     max-width: 500px;
   }
@@ -400,6 +431,74 @@ h1 > p{
     background: none;
     border: 2px solid #d0d0d0;
 }
+
+
+.contactcontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: ghostwhite;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+form > input{
+    margin-bottom: 10px;
+    height: 50px;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #d0d0d0;
+    color: #48554f;
+}
+
+ .sendbutton{
+    margin-bottom: 10px;
+    height: 50px;
+    width: 50%;
+    border: 2px solid #d0d0d0;
+    color:#0790A9;
+    font-size: 20px;
+    max-width: 150px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer > p{
+    font-size: 20px;
+    text-align: center;
+    max-width: 600px;
+    color: #48554f;
+}
+
+.socials{
+    display:flex;
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px 0 20px 0;
+}
+
+
+
+
 
 
 
