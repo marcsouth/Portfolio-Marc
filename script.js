@@ -1,15 +1,4 @@
-$(function() {
-    $("li a").click(function() {
-      // remove classes from all
-      $("li a").removeClass("active");
-      // add class to the one we clicked
-      $(this).addClass("active");
-      // stop the page from jumping to the top
-      return false;
-    });
-    });
-
-    var TxtType = function(el, toRotate, period) {
+var TxtType = function(el, toRotate, period) {
       this.toRotate = toRotate;
       this.el = el;
       this.loopNum = 0;
@@ -87,4 +76,6 @@ $(function() {
   }
   
   window.addEventListener("scroll", reveal);
-  
+
+
+

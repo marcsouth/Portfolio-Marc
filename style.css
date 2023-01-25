@@ -65,8 +65,6 @@ nav ul li a.active {
 
 
 
-
-
 .hamburger {
     display: none;
     height: fit-content;
@@ -82,7 +80,7 @@ nav ul li a.active {
     margin: 6px 0;
     background: #212526;
 }
-@media only screen and (max-width: 1100px) {
+@media(max-width: 1100px) {
     header {
         width: 90%;
         padding: 0 20px;
@@ -98,7 +96,7 @@ nav ul li a.active {
         transition: 0.2s;
         box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
     }
-    #nav_check:checked ~ nav {
+    #nav_check:checked ~ nav{
         left: 0;
     }
     nav .logo {
@@ -478,6 +476,7 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 footer > p{
@@ -495,7 +494,6 @@ footer > p{
     justify-content: space-evenly;
     margin: 20px 0 20px 0;
 }
-
 
 
 
