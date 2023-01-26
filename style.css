@@ -27,7 +27,7 @@ body {
     top: 0;
     /* transition: all 1000ms ease; */
      z-index: 10;
-     background: #ffff;
+     background: hsl(0deg 0% 100% / 46%);
 } 
 
 
@@ -68,6 +68,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding-right: 2rem;
+    z-index: 100;
 }
 
 .primary-nav{
@@ -103,9 +104,10 @@ margin-left: 2rem;
         flex-direction: column;
         padding: min(30vh,10rem) 2em;
         text-align: center;
-        background: hsl(0 0% 100% / 1);
+        background: hsl(0 0% 100% / .5);
         transform: translateX(100%);
         transition: transform 350ms ease-in;
+        backdrop-filter: blur(10px);
     }
     .navlink{
         margin-bottom: 40px;

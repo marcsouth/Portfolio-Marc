@@ -130,3 +130,8 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+$(primaryNav).click(function(){
+  $(".hamburger").removeClass("is-active");
+});
+});
