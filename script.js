@@ -124,3 +124,9 @@ var TxtType = function(el, toRotate, period) {
    
 });
 
+$(document).ready(function(){
+  $(".hamburger").click(function(){
+    $(this).toggleClass("is-active");
+  });
+});
+

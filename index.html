@@ -22,10 +22,15 @@
 
       <img src="/images/black logo.png" alt="" class="logo">
 
-    <button  class="mobile-nav-toggle" aria-controls="primary-nav" aria-expanded="false"><span class="sr-only">menu</span></button>
+ 
+    <div class="hamburger mobile-nav-toggle" id="hamburger-1" aria-controls="primary-nav" aria-expanded="false">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
 
         <nav class="nav-bar">
-            <ul class="primary-nav" data-visible="false">
+            <ul class="primary-nav" id="primary-nav" data-visible="false">
                 <li class="navlink">
                     <a href="index.html#home">Home</a>
                     <span aria-hidden="true"></span>
@@ -238,16 +243,21 @@
 
         <h3>Let's Build your next Idea Together</h3>
 
-        <form action="">
+        <form action="https://formsubmit.co/marcsouthofficial@gmail.com" method="POST">
 
    
-            <input type="text" id="name" name="name" placeholder=" Name">
+            <input type="text" name="name"  placeholder=" Name"required>
 
-            <input type="text" id="email" name="email" placeholder=" Email">
-
+            <input type="email" name="email" placeholder=" Email" required>
+          
             <input type="text" id="message" name="message" placeholder=" Message" class=" messagebox">
 
             <input type="submit" value="Send" class="sendbutton">
+
+            <input type="hidden" name="_template" value="table">
+
+            <input type="text" name="_honey" style="display:none">
+
 
 
         </form>
