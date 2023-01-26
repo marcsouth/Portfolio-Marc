@@ -79,3 +79,48 @@ var TxtType = function(el, toRotate, period) {
 
 
 
+  
+  const body = document.body;
+  const header = document.querySelector("header");
+  const main = document.querySelector("main");
+  const headerHeight = document.querySelector("header").offsetHeight;
+  main.style.top = headerHeight + "px";
+  let lastScroll = 0;
+  window.addEventListener("scroll", () => {
+    let currentScroll = window.pageYOffset;
+    if (currentScroll - lastScroll > 0) {
+      header.classList.add("scroll-down");
+      header.classList.remove("scroll-up");
+    } else {
+      // scrolled up -- header show
+      header.classList.add("scroll-up");
+      header.classList.remove("scroll-down");
+    }
+    lastScroll = currentScroll;
+  })
+
+  const primaryNav = document.querySelector('.primary-nav');
+  const navToggle = document.querySelector('.mobile-nav-toggle');
+
+  navToggle.addEventListener('click', ()=>{
+
+      const visibility = primaryNav.getAttribute('data-visible')
+
+      if(visibility === "false") {
+        primaryNav.setAttribute('data-visible', true);
+        navToggle.setAttribute('aria-expanded',true)
+      }else if (visibility === 'true'){
+        primaryNav.setAttribute("data-visible", false)
+        navToggle.setAttribute('aria-expanded',false)
+      }
+
+  });
+
+  primaryNav.addEventListener('click', ()=>{
+
+    const visibility = primaryNav.getAttribute('data-visible')
+       primaryNav.setAttribute("data-visible", false);
+       navToggle.setAttribute('aria-expanded',false)
+   
+});
+
