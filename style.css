@@ -213,7 +213,6 @@ h2{
     flex-direction: column;
     padding: 20px;
     max-width: 600px;
-    margin: auto;
     margin-bottom: 20px;
     font-size: 20px;
     background-color: ghostwhite;
@@ -229,7 +228,6 @@ h2{
     flex-direction: column;
     padding: 20px;
     max-width: 600px;
-    margin: auto;
     margin-bottom: 20px;
     font-size: 20px;
     background-color: ghostwhite;
@@ -249,6 +247,8 @@ h2{
 .skillscontainer{
     display: flex;
     margin: 20px 0 20px 0;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
 .skills >h3{
@@ -296,13 +296,19 @@ h2{
     .projectcontainer{
         flex-direction:column-reverse;
     }
-    .projectcontainer > img{
-        margin-bottom: 20px;
-    }
     .projectcontainer2{
         flex-direction:column;
     }
-    .projectcontainer2 > img{
+    .ppafcontainer{
+        margin-bottom: 20px;
+    }
+    .romolocontainer{
+        margin-bottom: 20px;
+    }
+    .tatianacontainer{
+        margin-bottom: 20px;
+    }
+    .dentalcontainer{
         margin-bottom: 20px;
     }
 }
@@ -410,17 +416,88 @@ h1 > p{
     margin-bottom: 20px;
   }
 
+/*THIS SECTION IS THE IMAGE CONTAINER FOR EACH PROJECT */
 
-
-  .projectcontainer > img{
+  .tatianacontainer > img{
     width: 100%;
-    max-width: 500px;
+    max-width: 200px;
+    filter: drop-shadow(1px 2px 3px );
   }
 
-  .projectcontainer2 > img{
+  .tatianacontainer{
+    background-size: cover;
+    /* align-items: center; */
+    height: 350px;
+    background-position-x: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#0790a9a3,#b26c1573), url(/images/tatianadeldeo.JPG);
+    max-width: 400px;
     width: 100%;
-    max-width: 500px;
+    filter: drop-shadow(2px 4px 6px black);
   }
+
+  .dentalcontainer > img{
+    width: 100%;
+    max-width: 200px;
+    filter: drop-shadow(1px 2px 3px );
+  }
+
+  .dentalcontainer{
+    background-size: cover;
+    /* align-items: center; */
+    height: 350px;
+    background-position-x: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#0790a9a3,#b26c1573), url(/images/dentalpi\ ture.jpg);
+    max-width: 400px;
+    width: 100%;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+
+  .ppafcontainer > img{
+    width: 100%;
+    max-width: 200px;
+    filter: drop-shadow(1px 2px 3px );
+  }
+
+  .ppafcontainer{
+    background-size: cover;
+    /* align-items: center; */
+    height: 350px;
+    background-position-x: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#0790a9a3,#b26c1573), url(/images/provincetownpicture.webp);
+    max-width: 400px;
+    width: 100%;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+
+  .romolocontainer > img{
+    width: 100%;
+    max-width: 300px;
+    filter: drop-shadow(1px 2px 3px );
+  }
+
+  .romolocontainer{
+    background-size: cover;
+    /* align-items: center; */
+    height: 350px;
+    background-position-x: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#0790a9a3,#b26c1573), url(/images/romolo-site.jpg);
+    max-width: 400px;
+    width: 100%;
+    filter: drop-shadow(2px 4px 6px black);
+  }
+
 
   .textcontainer{
     display: flex;
@@ -448,17 +525,18 @@ h1 > p{
 
 
 .projectbutton{
+    background-color: #0790a9;
     width: 120px;
     font-size: 16px;
     font-weight: 600;
-    color: #0790A9;
+    color: #ffffff;
     cursor: pointer;
     margin: 20px;
     height: 55px;
     text-align: center;
-    /* border: none; */
-    background: none;
-    border: 2px solid #d0d0d0;
+    border: none;
+    /* border: 2px solid #d0d0d0; */
+    border-radius: 10px;
 }
 
 
